@@ -11,7 +11,7 @@
 
   async function searchMovies(query) {
     try {
-      const response = await fetch(`/api/movies/search?query=${query}`);
+      const response = await fetch(`/api/movies/search?query=${query}&api_key=4f5efda7bee25172e66e37f63061459`);
       const data = await response.json();
       displayMovies(data.results);
     } catch (error) {
